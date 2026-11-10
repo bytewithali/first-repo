@@ -1,5 +1,4 @@
 
-/* General Styling */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,6 @@ body {
     color: white;
 }
 
-/* Navigation */
 header {
     background: #080808;
     padding: 20px 8%;
@@ -62,7 +60,6 @@ footer span {
     border-radius: 4px;
 }
 
-/* Hero Section */
 .hero {
     min-height: 600px;
     display: flex;
@@ -135,7 +132,6 @@ footer span {
     color: black;
 }
 
-/* Featured Cars */
 .cars,
 .services {
     padding: 90px 8%;
@@ -202,7 +198,6 @@ footer span {
     color: #d4a64a;
 }
 
-/* About Section */
 .about {
     display: flex;
     align-items: center;
@@ -234,7 +229,6 @@ footer span {
     margin-bottom: 25px;
 }
 
-/* Services */
 .service-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -263,7 +257,6 @@ footer span {
     line-height: 1.7;
 }
 
-/* Contact */
 .contact {
     text-align: center;
     padding: 90px 20px;
@@ -280,7 +273,6 @@ footer span {
     margin-bottom: 30px;
 }
 
-/* Footer */
 footer {
     text-align: center;
     padding: 30px;
@@ -293,7 +285,6 @@ footer p {
     font-size: 13px;
 }
 
-/* Responsive Design */
 @media (max-width: 900px) {
     .nav-links {
         gap: 12px;
