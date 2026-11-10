@@ -1,0 +1,353 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101010;
+    color: white;
+}
+
+/* Navigation */
+header {
+    background: #080808;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.logo span,
+footer span {
+    color: #d4a64a;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #d4a64a;
+}
+
+.nav-btn {
+    background: #d4a64a;
+    color: black;
+    padding: 12px 22px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background:
+        linear-gradient(90deg, rgba(0,0,0,0.9), rgba(0,0,0,0.3)),
+        url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1800')
+        center/cover no-repeat;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.subtitle,
+.section-heading p,
+.about-content > p:first-child,
+.contact > p:first-child {
+    color: #d4a64a;
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.hero h1 span,
+.section-heading span,
+.about-content span {
+    color: #d4a64a;
+}
+
+.hero-text {
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 25px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.primary {
+    background: #d4a64a;
+    color: black;
+}
+
+.primary:hover {
+    background: white;
+}
+
+.secondary {
+    border: 1px solid white;
+    color: white;
+}
+
+.secondary:hover {
+    background: white;
+    color: black;
+}
+
+/* Featured Cars */
+.cars,
+.services {
+    padding: 90px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    font-size: 38px;
+    margin-top: 10px;
+}
+
+.car-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.car-card {
+    background: #1c1c1c;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-10px);
+}
+
+.car-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.car-info {
+    padding: 25px;
+}
+
+.car-info h3 {
+    font-size: 22px;
+}
+
+.car-info p {
+    color: #aaa;
+    margin: 8px 0;
+}
+
+.car-info h4 {
+    color: #d4a64a;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.car-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.car-info a:hover {
+    color: #d4a64a;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 80px 10%;
+    background: #191919;
+}
+
+.about-image {
+    flex: 1;
+    min-height: 350px;
+    background: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1000')
+    center/cover;
+    border-radius: 8px;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+.about-content > p:not(:first-child) {
+    color: #bbb;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+/* Services */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: #1c1c1c;
+    padding: 40px 25px;
+    border-bottom: 3px solid #d4a64a;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    background: #292929;
+    transform: translateY(-7px);
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    color: #aaa;
+    line-height: 1.7;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    padding: 90px 20px;
+    background: #191919;
+}
+
+.contact h2 {
+    font-size: 38px;
+    margin: 20px 0;
+}
+
+.contact > p:not(:first-child) {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #080808;
+}
+
+footer p {
+    color: #888;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .nav-links {
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .car-container,
+    .service-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .car-container,
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+
+    .about-content h2 {
+        font-size: 29px;
+    }
+}
